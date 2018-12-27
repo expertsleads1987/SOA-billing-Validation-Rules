@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>196</line>
+      <col>54</col>
+      <file>file:/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe0.java</file>
+      <name>/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe0.java</name>
+      <fix/>
+      <msg>package com.dimensions.mw.utils.validationManagement does not exist</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>197</line>
+      <col>62</col>
+      <file>file:/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe0.java</file>
+      <name>/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe0.java</name>
+      <fix/>
+      <msg>package com.dimensions.mw.utils.validationManagement does not exist</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>281</line>
+      <col>81</col>
+      <file>file:/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe1.java</file>
+      <name>/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe1.java</name>
+      <fix/>
+      <msg>package com.dimensions.mw.utils.compositeManagement does not exist</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>291</line>
+      <col>57</col>
+      <file>file:/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe1.java</file>
+      <name>/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe1.java</name>
+      <fix/>
+      <msg>package com.dimensions.mw.utils.loggerManagement does not exist</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>366</line>
+      <col>57</col>
+      <file>file:/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe2.java</file>
+      <name>/C:/Users/yousef/Desktop/SOAApplicationHRWs/internal/HR_EvaluationAPIs/SOA/SCA-INF/bpel/Insert~0/src/orabpel/insertevalbackupbpelprs/ExecLetBxExe2.java</name>
+      <fix/>
+      <msg>package com.dimensions.mw.utils.loggerManagement does not exist</msg>
+   </Fault>
+</Faults>

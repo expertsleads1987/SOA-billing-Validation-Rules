@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:element name="InserttEvalBackupInfoMessageInput">
+  <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="MessageHeader" type="InputMessageHeaderComplex"/>
+                <xsd:element name="MessageBody" type="InputMessageBodyComplex"/>
+            </xsd:sequence>
+        </xsd:complexType>
+        </xsd:element>
+            <xsd:element name="InserttEvalBackupInfoMessageOutput">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="MessageHeader" type="OutputMessageHeaderComplex"/>
+                <xsd:element name="MessageBody" type="OutputMessageBodyComplex"/>
+                
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+ 
+    <xsd:complexType name="InputMessageHeaderComplex">
+        <xsd:sequence>
+            <xsd:element name="TransactionID" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ApplicationCode" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ApplicationUserName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InputMessageBodyComplex">
+        <xsd:sequence>
+            <xsd:element name="InfoInformation" type="InputInquiryInformationComplex"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InputInquiryInformationComplex">
+        <xsd:sequence>
+            <xsd:element name="P_EMP_ACNT_NO" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="P_BRCH_CODE" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="P_MGR_DECISION" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="P_ASS_TYPE" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="OutputMessageHeaderComplex">
+        <xsd:sequence>
+            <xsd:element name="TransactionID" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="OutputMessageBodyComplex">
+        <xsd:sequence>
+            <xsd:element name="StatusInformation" type="StatusInformationComplex"/>
+            <xsd:element name="ErrorInformation" type="ErrorInformaitonComplex" minOccurs="0"/>
+            <xsd:element name="TransactionInformation" type="TransactionInformationComplex" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="StatusInformationComplex">
+        <xsd:sequence>
+            <xsd:element name="Status" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ErrorInformaitonComplex">
+        <xsd:sequence>
+            <xsd:element name="ErrorBusCode" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ErrorBusMessage" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ErrorTechCode" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ErrorTechMessage" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ErrorTechDetails" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="TransactionInformationComplex">
+    <xsd:sequence>
+       <xsd:element minOccurs="1" maxOccurs="1" name="INSERT_EVALUATION_BACKUPResult" type="xsd:int" /> 
+     </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
